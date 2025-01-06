@@ -76,7 +76,7 @@ After the installation is finished the script will automaticly reboot into the n
 > Upon login or power-on, your wallpaper will automatically change, sourced from the `~/.config/wallpapers/` directory.
 
 > [!TIP]  
-> Want more **Catppuccin** wallpapers? Clone their repository directly into your wallpapers directory:
+> Want more **Catppuccin** wallpapers? Clone the repository directly into your wallpapers directory:
 
 ```bash
 git clone https://github.com/harilvfs/wallpapers ~/.config
