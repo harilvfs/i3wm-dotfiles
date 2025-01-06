@@ -1,13 +1,16 @@
+<div align="center">
+	
 # Justus0405 i3-wm Catppuccin Dotfiles
+</div>
 
-<p align="left">
+<p align="center">
     <!-- Discord Badge -->
     <a href="https://discord.gg/https://discord.com/invite/E2Bp7GtcaA"><img src="https://img.shields.io/discord/1060607505186684978?logo=Discord&colorA=1e1e2e&colorB=a6e3a1&style=for-the-badge"></a>
     <!-- Last Commit Badge -->
     <a href="https://github.com/Justus0405/i3wm-dotfiles/commits/main/"><img src="https://img.shields.io/github/last-commit/Justus0405/i3wm-dotfiles?logo=github&colorA=1e1e2e&colorB=cdd6f4&style=for-the-badge"></a>
 </p>
 
-<p align="left">
+<p align="center">
  <!-- Forks Badge -->
 	<a href="https://github.com/Justus0405/i3wm-dotfiles/forks"><img src="https://img.shields.io/github/forks/Justus0405/i3wm-dotfiles?colorA=1e1e2e&colorB=ea999c&style=for-the-badge"></a>
     <!-- Stars Badge -->
