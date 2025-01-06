@@ -30,16 +30,17 @@
 > [!CAUTION]  
 > This script is designed to be done after a minimal arch installation,
 > using it on previously installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, etc) and is at your own risk.
+<br>
 
-After a minimal Arch install (with grub and systemd), execute -
+***After a minimal Arch install (with grub and systemd), execute -***
 
 ```shell
-pacman -Syy git
-git clone https://github.com/Justus0405/i3wm-dotfiles.git
-cd i3wm-dotfiles/src/
-chmod +x install.sh
-./install.sh
+bash <(curl -L https://raw.githubusercontent.com/harilvfs/i3wm-dotfiles/refs/heads/main/setup.sh)
 ```
+
+> [!NOTE]
+> Ensure curl is installed first using:
+> `sudo pacman -S curl`
 
 After the installation is finished the script will automaticly reboot into the new enviroment.
 
@@ -56,13 +57,26 @@ After the installation is finished the script will automaticly reboot into the n
 
 ## FAQ
 
-### How do I change, add, or delete wallpapers?
+### How Do I Change, Add, or Delete Wallpapers?
 
-- **To change your wallpaper:** Press `SUPER + D`, type `Nitrogen`, and press Enter to open it. Select your desired wallpaper and click "Apply" at the bottom-right corner.
-- **To add or delete wallpapers:** Copy your wallpaper files to `~/.config/wallpapers/` to add them, or delete files from this directory to remove them.
+#### **Change Your Wallpaper Manually**
+- Press `SUPER + D`, type `Nitrogen`, and press Enter.
+- Select your desired wallpaper from the list in Nitrogen.
+- Click "Apply" at the bottom-right corner to set it.
+
+#### **Add New Wallpapers**
+- Place your wallpaper files in the `~/.config/wallpapers/` directory. These files will be included in the automatic rotation and appear in Nitrogen for manual selection.
+
+#### **Delete Existing Wallpapers**
+- To remove a wallpaper, simply delete its file from the `~/.config/wallpapers/` directory.
+
+> [!NOTE]
+> Wallpapers are now managed using **feh** for automatic updates and **Nitrogen** for manual customization.
+>
+> Upon login or power-on, your wallpaper will automatically change, sourced from the `~/.config/wallpapers/` directory.
 
 > [!TIP]  
-> To get more `Catppuccin` wallpapers, clone the repository directly into the `~/.config` directory.  
+> Want more **Catppuccin** wallpapers? Clone their repository directly into your wallpapers directory:
 
 ```bash
 git clone https://github.com/harilvfs/wallpapers ~/.config
