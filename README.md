@@ -32,15 +32,15 @@
 > using it on previously installed desktop should work but will change whatever you currently have (gtk/qt theming, shell, sddm, etc) and is at your own risk.
 <br>
 
-***After a minimal Arch install (with grub and systemd), execute -***
+After a minimal Arch install (with grub and systemd), execute -
 
-```shell
-bash <(curl -L https://raw.githubusercontent.com/harilvfs/i3wm-dotfiles/refs/heads/main/setup.sh)
+```sh
+sudo pacman -Syy git
+git clone https://github.com/harilvfs/i3wm-dotfiles.git
+cd i3wm-dotfiles/src/
+chmod +x install.sh
+./install.sh
 ```
-
-> [!NOTE]
-> Ensure curl is installed first using:
-> `sudo pacman -S curl`
 
 After the installation is finished the script will automaticly reboot into the new enviroment.
 
